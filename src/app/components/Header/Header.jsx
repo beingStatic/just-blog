@@ -11,6 +11,11 @@ const headerData = [
     title: 'About',
     url: '/about',
   },
+  {
+    id: '3',
+    title: 'Blogs',
+    url: '/blogs',
+  },
 ];
 
 const Header = () => {
