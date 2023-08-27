@@ -1,9 +1,15 @@
 import Image from 'next/image';
+import HeroImg from '../../public/imgs/home-hero-image.jpg';
 
 export default function Home() {
   return (
     <main>
-      <h1 className="text-4xl font-bold">Bismillah...</h1>
+      <section>
+        <div></div>
+        <div>
+          <Image src={HeroImg} alt="hero Img" />
+        </div>
+      </section>
     </main>
   );
 }
