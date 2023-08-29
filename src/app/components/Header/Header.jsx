@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../../../public/svgs/brand.svg';
+import DarkModeButton from '../DrakModeButton/DarkModeButton';
 const headerData = [
   {
     id: '1',
@@ -27,6 +28,7 @@ const Header = () => {
         <Image src={logo} alt="brand" height={40}></Image>
       </div>
       <div className="flex gap-10">
+        <DarkModeButton />
         {headerData.map((item) => {
           return (
             <Link key={item.id} className="cursor-pointer" href={item.url}>
