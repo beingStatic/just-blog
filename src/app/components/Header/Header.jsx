@@ -25,7 +25,9 @@ const Header = () => {
   return (
     <div className="flex gap-5 py-5 items-center justify-between">
       <div>
-        <Image src={logo} alt="brand" height={40}></Image>
+        <Link href="/">
+          <Image src={logo} alt="brand" height={40}></Image>
+        </Link>
       </div>
       <div className="flex gap-10">
         <DarkModeButton />

@@ -1,9 +1,11 @@
-import React from 'react';
+'use client';
+import React, { useContext } from 'react';
 import styles from './style.module.css';
+import { ThemeContext } from '@/app/context/ThemeContext';
 const DarkModeButton = () => {
-  const mode = 'light';
+  const { mode, handleMode } = useContext(ThemeContext);
   return (
-    <div className={`${styles.container} flex relative`}>
+    <div className={`${styles.container} flex relative`} onClick={handleMode}>
       <div>⚫</div>
       <div>⚪</div>
       <div
