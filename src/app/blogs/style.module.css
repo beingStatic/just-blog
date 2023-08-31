@@ -1,3 +1,32 @@
 .blogContainer {
-  border: 1px solid #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+.blogContent {
+  height: 20rem;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+}
+.blogContent:nth-child(1) {
+  background-image: url('../../../public/imgs/mountains.png');
+}
+.blogContent:nth-child(2) {
+  background-image: url('../../../public/imgs/landscapes.png');
+}
+.blogContent:nth-child(3) {
+  background-image: url('../../../public/imgs/plants.png');
+}
+.headingLayer {
+  display: flex;
+  height: 20%;
+  width: 100%;
+  background-color: #a8ad93ab;
+  position: relative;
+  font-size: 1.7rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
 }

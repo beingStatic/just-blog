@@ -22,12 +22,12 @@ const blogCategories = [
 const Blogs = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold">Blogs</h1>
-      <div>
+      <h1 className="text-3xl font-bold mb-5">Blogs</h1>
+      <div className={styles.blogContainer}>
         {blogCategories.map((item) => {
           return (
-            <Link key={item.id} href={item.url}>
-              <span>{item.title}</span>
+            <Link key={item.id} href={item.url} className={styles.blogContent}>
+              <span className={styles.headingLayer}>{item.title}</span>
             </Link>
           );
         })}
