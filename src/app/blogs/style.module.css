@@ -30,3 +30,35 @@
   justify-content: center;
   font-weight: 600;
 }
+.tabContainer {
+  display: flex;
+  gap: 3rem;
+}
+.blogContentContainer {
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 4rem;
+}
+.blogContentContainer div {
+  flex: 1;
+  display: grid;
+  place-content: center;
+}
+
+.blogContentContainer:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.blogImgContainer {
+  position: relative; /*It's Important to mention position:relative*/
+  height: 400px;
+}
+.activeTab {
+  border: 2px solid #368f8b;
+  border-radius: 0.5rem;
+  color: #368f8b;
+  font-weight: 600;
+}
+.tabItem {
+  padding: 0.5rem;
+}
